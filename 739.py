@@ -22,4 +22,4 @@ class Solution(object):
             cnt.append(0)               # 현재 숫자 카운팅 추가
             idx += 1
         
-        return cnt
+        return cnt # 1701ms 20mb
