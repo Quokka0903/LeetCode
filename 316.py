@@ -1,16 +1,13 @@
 class Solution(object):
     def removeDuplicateLetters(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        
+
         stack = []          # 스택쓰라니까 억지로 쓰는 스택배열
         alpha = [0] * 26    # ord('str') - ord('a') 해서 카운팅할 배열
-        fixed = []       # 이미 자리고정된(혹은 될 예정인) 애들 모음
+        fixed = []          # 이미 자리고정된(혹은 될 예정인) 애들 모음
         
         for str in s :
             alpha[ord(str) - ord('a')] += 1 # 각 문자가 몇 개나 들어있는지 카운팅
+        
         
         for str in s :
             

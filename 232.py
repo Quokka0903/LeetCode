@@ -50,7 +50,7 @@ class MyQueue(object):
         :rtype: bool
         """
         
-        return not self.q_push and not self.q_pop
+        return not self.q_push and not self.q_pop``
 
 
 # Your MyQueue object will be instantiated and called as such:

@@ -8,14 +8,11 @@ class MyCircularQueue(object):
         self.qlen = k
 
     def enQueue(self, value):
-        """
-        :type value: int
-        :rtype: bool
-        """
+
         if len(self.cq) == self.qlen:
             return False
         else:
-            self.cq.append(value)
+            self.cq.append(value)           
             return True
         
 

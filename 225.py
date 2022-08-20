@@ -15,6 +15,7 @@ class MyStack(object):
         
         self.q.rotate(1 - len(self.q)) # len(self.q) - 1 만큼 앞으로 보내기
 
+
     def pop(self):
         """
         :rtype: int
@@ -44,3 +45,4 @@ class MyStack(object):
 # param_2 = obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.empty()
+
