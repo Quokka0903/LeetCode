@@ -8,14 +8,14 @@ class Solution(object):
         node = collections.defaultdict(list)
         cir = []
         for i in range(n):
-            cir.append(i)
+            cir.append(i)                       
         
         for unit in edges:
-            node[unit[0]].append(unit[1])
-            node[unit[1]].append(unit[0])
+            node[unit[0]].append(unit[1])       
+            node[unit[1]].append(unit[0])       
         
-        cnt = n
-        stack = collections.deque([])
+        cnt = n                                 
+        stack = collections.deque([])           
         while cnt >= 2:
             if stack:
                 while stack:
@@ -23,7 +23,7 @@ class Solution(object):
                     node[a].remove(b)
                     cir.remove(b)
                     
-            for idx in cir:
+            for idx in cir:                     
                 if len(node[idx]) == 1:
                     stack.append([node[idx].pop(), idx])
                     cnt -= 1
